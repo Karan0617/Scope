@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Login from './Login/Login'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Features', href: '#' },
+  { name: 'Home', href: '#home' },
+  { name: 'Features', href: '#features' },
   { name: 'Programs & Courses', href: 'https://www.scopeschooling.in/courses' },
   { name: 'About', href: '#' },
 ]
@@ -13,7 +14,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900" id='home'>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -44,9 +45,7 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-lg font-mono leading-6 text-purple-400">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+              <Login/>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

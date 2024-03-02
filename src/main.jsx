@@ -8,17 +8,20 @@ import Team from './components/team.jsx'
 import FAQ from './components/Faq.jsx'
 import LogoCloud from './components/LogoCloud.jsx'
 import Contact from './components/Contact.jsx'
-import Footer from './components/Footer.jsx' 
+import Footer from './components/Footer.jsx'
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Hero/>
-    <Features/>
-    <About/>
-    <LogoCloud/>
-    <Team/>
-    <Contact/>
-    <FAQ/>
-    <Footer/>
+    <NextThemesProvider attribute="class" defaultTheme="dark">
+    <Hero />
+    <Features />
+    <About />
+    <LogoCloud />
+    <Team />
+    <Contact />
+    <FAQ />
+    <Footer />
+    </NextThemesProvider>
   </React.StrictMode>,
 )
