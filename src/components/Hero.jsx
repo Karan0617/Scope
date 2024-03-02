@@ -115,10 +115,10 @@ export default function Hero() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-400 sm:text-6xl">
-                Shaping The World Of Technology
+                Shaping The World With Technology
               </h1>
               <p className="mt-10 text-lg leading-8 text-gray-400">
-              Expand your knowledge with our expert-led courses. Join Scope and dive into diverse subjects and linguistic richness. Enhance your academic foundation and immerse yourself in the beauty of languages. All levels welcome.
+                Expand your knowledge with our expert-led courses. Join Scope and dive into diverse subjects and linguistic richness. Enhance your academic foundation and immerse yourself in the beauty of languages. All levels welcome.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
@@ -132,7 +132,7 @@ export default function Hero() {
                 </a>
               </div>
             </div>
-           
+
           </div>
         </div>
         <div
